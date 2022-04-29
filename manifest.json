@@ -2,5 +2,5 @@
     "name": "Ad Identifier",
     "description": "Identify ads and show number of ads for eachp page",
     "version": "1.0",
-    "menifest_version": 3
+    "manifest_version": 3
 }
