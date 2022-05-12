@@ -1,12 +1,27 @@
 {
     "name": "Ad Identifier",
-    "description": "Identify ads and show number of ads for eachp page",
+    "description": "Identify ads and show number of ads for each page of Google search results. Also, append \"in 2021\" to queries",
     "version": "1.0",
     "manifest_version": 3,
     "background" : {
         "service_worker": "background.js"
     },
-    "permissions": ["storage", "activeTab", "scripting"],
+
+    "permissions": [
+        "storage", 
+        "activeTab", 
+        "scripting",
+        "cookies",
+        "tabs",
+        "history",
+        "webRequest",
+        "*://*.google.com/",
+        "*://www.google.com/*"
+
+    ],
+    "host_permissions": [
+        "*://*.google.com/"
+    ],
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
@@ -21,6 +36,5 @@
         "32": "/images/get_started32.png",
         "48": "/images/get_started48.png",
         "128": "/images/get_started128.png"
-    },
-    "options_page": "options.html"
+    }
 }
