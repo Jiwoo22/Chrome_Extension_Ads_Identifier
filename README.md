@@ -1,5 +1,5 @@
 # googleExtension
-google extension to identify ads on search results
+chrome extension to identify ads on search results
 
 ## How To Run
 1. Click the 3 dots in the top right of the Google Chrome browser.
